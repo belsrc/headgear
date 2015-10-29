@@ -5,7 +5,9 @@ Sets various HTTP header values that **_help_** secure your Express.js applicati
 -----------------------------------------------------
 
 Install the package
-```npm install headgear --save```
+```bash
+npm install headgear --save
+```
 
 Then simply include the module and add it into the application.
 ```javascript
