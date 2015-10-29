@@ -1,0 +1,58 @@
+{
+  "maxerr"        : 100,
+  "browser"       : true,
+
+  // Libraries
+  "jquery"        : false,
+  "prototypejs"   : false,
+  "mootools"      : false,
+  "dojo"          : false,
+  "node"          : true,
+
+  // Development
+  "debug"         : false,
+  "devel"         : true,
+  "maxcomplexity" : 10,
+
+  // ES5
+  "es5"           : true,
+  "strict"        : false,
+  "globalstrict"  : false,
+
+  // Coding Rules
+  "asi"           : false,
+  "laxbreak"      : false,
+  "bitwise"       : false,
+  "boss"          : false,
+  "curly"         : true,
+  "eqeqeq"        : true,
+  "eqnull"        : true,
+  "evil"          : false,
+  "expr"          : false,
+  "forin"         : true,
+  "immed"         : true,
+  "latedef"       : true,
+  "loopfunc"      : false,
+  "noarg"         : true,
+  "regexp"        : false,
+  "regexdash"     : false,
+  "scripturl"     : true,
+  "shadow"        : false,
+  "supernew"      : false,
+  "undef"         : true,
+  "unused"        : true,
+
+  // Personal
+  "camelcase"     : false,
+  "newcap"        : true,
+  "indent"        : 2,
+  "quotmark"      : "single",
+  "noempty"       : true,
+  "nonew"         : true,
+  "plusplus"      : false,
+  "sub"           : false,
+  "trailing"      : true,
+
+  // Globals
+  "predef"        : ["__base", "__app", "__env", "next", "suite", "test"]
+}

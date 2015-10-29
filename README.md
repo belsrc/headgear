@@ -34,8 +34,8 @@ var headgear = require('headgear');
 app.use(headgear.noSniff());
 ```
 
-#### #frameOption(option:String)
-Adds ```X-Frame-Options: sameorigin``` to the response header.
+#### #frameOption(option:String, allowed:String)
+Adds ```X-Frame-Options: sameorigin``` to the response header. The ```allowed``` argument only needs to be supplied when using the option type of ```allow-from```.
 ```option``` can be any of ```[deny, sameorigin, allow-from, allowall]``` if no value is given it defaults to ```sameorigin```
 ```javascript
 var headgear = require('headgear');
