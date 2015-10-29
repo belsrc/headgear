@@ -1,5 +1,5 @@
 ## Headgear
-Sets various HTTP header values that **_help_** secure you Express.js application. This **WILL NOT** fully protect any application, this is merely some seriously low hanging fruit.
+Sets various HTTP header values that **_help_** secure your Express.js application. This **WILL NOT** fully protect any application, this is merely some seriously low hanging fruit.
 
 ### Install
 -----------------------------------------------------
