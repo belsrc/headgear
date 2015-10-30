@@ -3,7 +3,7 @@ var req     = require('supertest');
 var chai    = require('chai');
 var assert  = chai.assert;
 
-var headgear = require('../cov/headgear');
+var headgear = require('../lib/headgear');
 
 
 var testResponse = function(request, response, next) {
