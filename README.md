@@ -71,7 +71,7 @@ app.use(headgear.noCache());
 ```
 
 #### #contentSecurity(options:Object)
-Adds ```Content-Security-Policy-Report-Only: connect-src 'self' https:; ...``` or ```Content-Security-Policy: connect-src 'self' https:; ...``` to the response header.
+Adds ```Content-Security-Policy-Report-Only:  ...``` or ```Content-Security-Policy: ...``` to the response header.
 ```javascript
 var headgear = require('headgear');
 var options = {
@@ -107,6 +107,21 @@ Available options are:
 }
 ```
 More information on the accepted values can be found here: https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives
+
+#### #keyPinning(keys;Array, maxAge:Number[, subdomains:Boolean[, reportUrl:String]])
+Adds ```Public-Key-Pins-Report-Only:  ...``` or ```Public-Key-Pins: ...``` to the response header.
+```javascript
+var headgear = require('headgear');
+
+app.use(headgear.keyPinning(
+  ['cUPcTAZWKaASuYWhhneDttWpY3oBAkE3h2+soZS7sWs=', 'M8HztCzM3elUxkcjR2S5P4hhyBNf6lHkmjAHKhpGPWE='],
+  5184000,
+  true,
+  'http://report.com'
+));
+```
+If the report url is provided the ```Public-Key-Pins-Report-Only``` header value will automatically be used.
+More information on the accepted values can be found here: https://developer.mozilla.org/en-US/docs/Web/Security/Public_Key_Pinning
 
 #### #all(options:Object)
 Adds the ```#removePoweredBy```, ```#noSniff```, ```#downloadOption```, ```#xssProtect```, ```#frameOption```, ```#transportSecurity``` middleware. The ```#noCache``` and ```#contentSecurity``` are NOT included. The ```options``` argument is an object that contains the settings for the ```#frameOption``` and ```#transportSecurity```.

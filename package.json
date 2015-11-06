@@ -50,13 +50,12 @@
   },
   "homepage": "https://github.com/belsrc/headgear#readme",
   "devDependencies": {
-    "chai": "^3.4.0",
+    "express": "^4.13.3",
     "mocha": "^2.3.3",
     "supertest": "^1.1.0"
   },
   "dependencies": {
     "connect": "^3.4.0",
-    "dashify": "^0.2.0",
-    "superagent": "^1.4.0"
+    "dashify": "^0.2.0"
   }
 }
