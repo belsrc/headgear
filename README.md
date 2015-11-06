@@ -131,6 +131,17 @@ var options = {
 app.use(headgear.all(options));
 ```
 
+### Links
+-----------------------------------------------------
+
+* https://www.owasp.org/index.php/List_of_useful_HTTP_headers
+* https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+* http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+* http://content-security-policy.com/
+* https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives
+* https://developer.mozilla.org/en-US/docs/Web/Security/Public_Key_Pinning
+
+
 ### License
 -----------------------------------------------------
 

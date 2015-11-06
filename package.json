@@ -25,7 +25,6 @@
     "x-content-type-options",
     "x-powered-by",
     "powered-by",
-    "public-key pinning",
     "xss",
     "frame",
     "content",
@@ -40,7 +39,10 @@
     "cert",
     "certificate",
     "noopen",
-    "mimetype"
+    "mimetype",
+    "hpkp",
+    "key",
+    "pinning"
   ],
   "license": "MIT",
   "bugs": {
@@ -54,6 +56,7 @@
   },
   "dependencies": {
     "connect": "^3.4.0",
-    "dashify": "^0.2.0"
+    "dashify": "^0.2.0",
+    "superagent": "^1.4.0"
   }
 }
