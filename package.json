@@ -1,6 +1,6 @@
 {
   "name": "headgear",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Sets various security related headers",
   "main": "index.js",
   "scripts": {
